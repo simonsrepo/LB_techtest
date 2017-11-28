@@ -17,7 +17,11 @@ class RacesController extends Controller
      */
     public function index()
     {
-        return Race::withCount('competitors')->get();
+        return Race::withCount('competitors')
+                        ->whereRaw('closeTime > NOW()')
+                        ->limit(5)
+                        ->orderBy('closeTime', 'asc')
+                        ->get();
     }
 
     public function raceInfo(Int $raceID)
