@@ -1,8 +1,12 @@
 ## TODO
 Add testing
+
 Tidy up code to psr-2 (need to install phpcs)
+
 Create admin section to make adding races and competitors easier
+
 Test installing from scratch
+
 Remove unnecessary node modules
 
 
@@ -18,7 +22,7 @@ To create a competitor go to /api/competitors/create this will create a competit
 **race_competitor**: This links the above to tables, it also holds the competitor position, and the database shouldn't let you enter a race with the same position twice or competitor.
 
 
-#Install
+## Install
 
 Install laravel via composer, download the repo from git hub, run `composer update` and `npm install`
 
