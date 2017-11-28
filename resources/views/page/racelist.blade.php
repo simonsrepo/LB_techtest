@@ -5,14 +5,14 @@
 
 @section('content')
 <div class="row col-xs-12">
-    <table class="table raceList" ng-init="getRaces();">
-        <thead>
+    <table class="table table-striped raceList" ng-init="getRaces();">
+        <thead class="thead-dark">
             <tr>
-                <th>Track</th>
-                <th>Class</th>
-                <th>No. of Competitors</th>
-                <th>Race Time</th>
-                <th>Betting Closes</th>
+                <th scope="col">Track</th>
+                <th scope="col">Class</th>
+                <th scope="col">No. of Competitors</th>
+                <th scope="col">Race Time</th>
+                <th scope="col">Betting Closes</th>
             </tr>
         </thead> 
         <tbody>   
@@ -95,10 +95,10 @@
                     return 'Ended';
                 }
                 var countDown = new Date(timeDiff);
-                var dateString = 'Day(s): ' + Math.floor(timeDiff / millSecsInDay);
-                dateString += ' Hour(s): ' + countDown.getHours();
-                dateString += ' Minutes(s): ' + countDown.getMinutes();
-                dateString += ' Seconds(s): ' + countDown.getSeconds();
+                var dateString = Math.floor(timeDiff / millSecsInDay) + ' Day(s) '; 
+                dateString += countDown.getHours() + ' Hour(s) ';
+                dateString += countDown.getMinutes() + ' Minute(s) ';
+                dateString += countDown.getSeconds() + ' Second(s)';
                 return dateString;
             }
         }]);

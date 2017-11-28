@@ -65878,7 +65878,6 @@ window._ = __webpack_require__("./node_modules/lodash/lodash.js");
 
 try {
   window.$ = window.jQuery = __webpack_require__("./node_modules/jquery/dist/jquery.js");
-
   __webpack_require__("./node_modules/bootstrap-sass/assets/javascripts/bootstrap.js");
 } catch (e) {}
 

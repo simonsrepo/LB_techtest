@@ -24,7 +24,7 @@ To create a competitor go to /api/competitors/create this will create a competit
 
 ## Install
 
-Install laravel via composer, download the repo from git hub, run `composer update` and `npm install`
+Download the repo from git hub, run `composer install` and `npm install`
 
 to compile the js and css run 
 
