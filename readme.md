@@ -1,8 +1,8 @@
 ## TODO
-Put in testing
-tidy up code psr-2 (need to install phpcs)
+Add testing
+Tidy up code to psr-2 (need to install phpcs)
 Create admin section to make adding races and competitors easier
-test installing from scratch
+Test installing from scratch
 Remove unnecessary node modules
 
 
