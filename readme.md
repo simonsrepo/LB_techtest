@@ -29,3 +29,8 @@ Install laravel via composer, download the repo from git hub, run `composer upda
 to compile the js and css run 
 
 `npm run prod`
+
+## Running
+The list of races should load be default, clicking the race should then should who's running
+
+Once a race is closed it is removed from the list, at this point an api call is made to see if there are any more races.
